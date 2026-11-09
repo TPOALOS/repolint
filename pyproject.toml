@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repolint"
+version = "1.0.0"
+description = "Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links. No dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TPOALOS"}]
+keywords = ["repository", "lint", "readme", "license", "open-source"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/TPOALOS/repolint"
+
+[project.scripts]
+repolint = "repolint:main"
+
+[tool.setuptools]
+py-modules = ["repolint"]
